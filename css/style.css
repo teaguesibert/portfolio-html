@@ -1,0 +1,118 @@
+/* Navbar */
+.profile-heading{
+  background-color: transparent #95898e48;
+}
+
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  background-color: rgba(47, 47, 47, 0.294);
+  
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.3s;
+}
+/*FontAwesome Icon Color*/
+a .fa {
+  color:rgb(46, 46, 46) !important; 
+}
+
+.nav-button {
+  background-color:rgba(47, 47, 47, 0.281);
+  border-color:rgba(0, 0, 0, 0.1) ;
+}
+
+.nav-item-border {
+  border-top: .5pt solid rgba(153, 153, 153, 0.315);
+  border-bottom: .5pt solid rgba(153, 153, 153, 0.315);
+}
+
+
+.nav-link-color {
+  color: rgb(226, 225, 225);
+}
+.nav>li>a:hover {
+  color: rgba(194, 193, 193, 0.438);
+}
+
+.sticky-top {
+  top: 2em;
+}
+/*navbar toggle*/
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+    touch-action: none;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    touch-action: none;
+  }
+}
+
+/* Body */
+
+body {
+  background: linear-gradient(to bottom, #266b9cc0, #a77267c0);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.horizontal-divider {
+  margin: 3rem 0;
+  border-bottom: 1px ridge rgba(255, 255, 255, 0.644);
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.text-gray {
+  color: #aaa;
+}
+
+#content {
+  background-image: url(../css/backgrounds/cloud-background.jpg);
+  background-size: cover;
+}
+
+#portfolio {
+  background: linear-gradient(to top, #266b9cc0, #a77267c0);
+}
+
+/* Cards */
+.card-text {
+  font-size: 10pt;
+}
+.card-title {
+  font-size: 14pt;
+}
+.card-date {
+  font-size: 12px;
+}
